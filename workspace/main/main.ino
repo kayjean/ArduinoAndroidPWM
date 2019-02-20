@@ -8,8 +8,8 @@
  #include <Usb.h>
  #include <AndroidAccessory.h>
  #define  LED_PIN  13
- #define  LED_PIN2  14
- #define  LED_PIN3  15
+ #define  LED_PIN2  12
+ #define  LED_PIN3  11
  AndroidAccessory acc("Manufacturer",
    "Model",
    "Description",
@@ -49,9 +49,11 @@
          
        }
        else
+       {
          digitalWrite(LED_PIN,LOW); // turn off light
          digitalWrite(LED_PIN2,LOW); // turn off light
          digitalWrite(LED_PIN3,LOW); // turn off light
+       }
      }
    } 
    else
